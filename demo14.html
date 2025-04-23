@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cá Nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #ffe6f2;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #ff4d94;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hiệu ứng khi cuộn */
+        nav.scrolled ul li a {
+            font-size: 22px;
+            transform: translateX(-10px);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://source.unsplash.com/1600x900/?pink') no-repeat center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff3385;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .about, .portfolio, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(255,77,148,0.3);
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #ff4d94;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Hồ sơ cá nhân</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> Giới thiệu</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Dự án</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Chào mừng đến với hồ sơ cá nhân</h1>
+        <p>Tôi là một lập trình viên đam mê sáng tạo</p>
+        <a href="#portfolio" class="btn">Xem dự án</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Giới thiệu</h2>
+        <p>Tôi là một lập trình viên yêu thích phát triển web và sáng tạo giao diện đẹp.</p>
+        <img src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/481704349_1063611382164513_1801953581129325104_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFRn2Qpgk037i0YEl1-3w-ECIff4YrwxxUIh9_hivDHFZgYDq_KuhgjNvy6ZbnlhKOkjeApQwglTc2oFN-IvxB7&_nc_ohc=jqHBjXPMBl0Q7kNvwEoMmZQ&_nc_oc=Adl75Wu02x8KFzJTLF-Z28Ds5PJ-aHS7BBPi3cxAQpfQh8HqKkpNFIZ4I6qxPx-kZqo&_nc_zt=23&_nc_ht=scontent.fhan5-11.fna&_nc_gid=E7IIkXU1eue2IYTXg8_pDg&oh=00_AfE5t_WLLJART3j2oLJu1Fi1abZsx-q-YGW1it_y_zCIaw&oe=680E7327" alt="Ảnh đại diện">
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Dự án của tôi</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 11">
+                <a href="https://lykhong.github.io/1/" target="_blank">bài 11</a>
+                <h3>Dự án 11</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 22">
+                <a href="https://lykhong.github.io/2/" target="_blank">bài 22</a>
+                <h3>Dự án 22</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 33">
+                <a href="https://lykhong.github.io/3/" target="_blank">bài 33</a>
+                <h3>Dự án 33</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 44">
+                <a href="https://lykhong.github.io/4/" target="_blank">bài 44</a>
+                <h3>Dự án 44</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 55">
+                <a href="https://lykhong.github.io/5/" target="_blank">bài 55</a>
+                <h3>Dự án 55</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 66">
+                <a href="https://lykhong.github.io/6/" target="_blank">bài 66</a>
+                <h3>Dự án 66</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 77">
+                <a href="https://lykhong.github.io/7/" target="_blank">bài 77</a>
+                <h3>Dự án 77</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 88">
+                <a href="https://lykhong.github.io/8/" target="_blank">bài 88</a>
+                <h3>Dự án 88</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 99">
+                <a href="https://lykhong.github.io/9/" target="_blank">bài 99</a>
+                <h3>Dự án 99</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 10">
+                <a href="https://lykhong.github.io/10/" target="_blank">bài 10</a>
+                <h3>Dự án 10</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 1">
+                <a href="https://lykhong.github.io/11/" target="_blank">bài 1</a>
+                <h3>Dự án 1</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 2">
+                <a href="https://lykhong.github.io/12/" target="_blank">bài 2</a>
+                <h3>Dự án 2</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 3">
+                <a href="https://lykhong.github.io/133/" target="_blank">bài 3</a>
+                <h3>Dự án 3</h3>
+            </div>
+            <div class="project">
+                <img src="https://vietnamtravelmart.com.vn/wp-content/uploads/images1248012-unnamed-1468255588101.jpg" alt="Dự án 4">
+                <a href="https://lykhong.github.io/14/" target="_blank">bài 4</a>
+                <h3>Dự án 4</h3>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: khongly121406@mail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hồ sơ cá nhân</p>
+    </footer>
+
+    <!-- JavaScript để xử lý sự kiện cuộn -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
